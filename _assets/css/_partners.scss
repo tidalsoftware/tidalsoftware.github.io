@@ -1,0 +1,99 @@
+/*=====PARTNER PAGE================================*/
+
+/*=========HERO IMAGE=============*/
+
+.partner-hero {
+
+	background-color: $color--accent;
+	padding: 20% 0 5% 0;
+
+	@include breakpoint (medium) {
+    padding-top: 10%;
+  }
+
+	h2 {
+		font-weight: bold;
+		padding: 10% 0;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+  .fa {
+    color: black;
+  }
+
+  ul {
+    text-align: left;
+  }
+
+	li {
+		color: black;
+	}
+
+  .columns {
+    text-align: center;
+  }
+
+	p {
+		color: $color--headlines;
+		text-align: center;
+	}
+
+	&__item {
+		padding: 5%;
+	}
+
+	&__icon {
+		text-align: center;
+	}
+
+	hr {
+		height: 2px;
+		background: $color--headlines;
+		font-size: 0;
+		border: 0;
+	}
+
+	@include breakpoint (medium) {
+		h3 {
+			text-align: left;
+		}
+
+		h2 {
+			padding:1% 0;
+		}
+
+
+		&__icon {
+			text-align: left;
+		}
+
+		p {
+			text-align: left;
+		}
+	}
+
+}
+
+/* Technology Partners */
+
+.technology-partners {
+	padding: 4rem 0;
+
+	&__blocks {
+		margin-top: 2rem;
+	}
+
+	&__block {
+		background: #f1f1f1;
+		border: 1px solid #f3f3f3;
+	}
+}
+
+/* Cloud Migrations Partners */
+
+.cloud-migrations {
+	padding: 4rem 0;
+}

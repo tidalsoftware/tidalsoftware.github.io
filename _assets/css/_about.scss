@@ -1,0 +1,178 @@
+/*=====ABOUT PAGE================================*/
+
+/*=========HERO IMAGE=============*/
+
+.about-hero {
+
+	background-color: $color--accent;
+	padding: 20% 0 5% 0;
+
+  h2 {
+		font-weight: bold;
+	}
+
+  .subtitle {
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+	h3 {
+		text-align: center;
+	}
+
+  .fa {
+    color: black;
+  }
+
+	li {
+		color: $color--headlines;
+	}
+
+	p {
+		color: $color--headlines;
+		text-align: center;
+	}
+
+	&__item {
+		padding: 5%;
+	}
+
+	&__icon {
+		text-align: center;
+	}
+
+	hr {
+		height: 2px;
+		background: $color--headlines;
+		font-size: 0;
+		border: 0;
+	}
+
+  .title {
+    margin-bottom: 5%;
+  }
+
+	@include breakpoint (medium) {
+
+    padding-top: 10%;
+
+		h3 {
+			text-align: left;
+		}
+
+		&__icon {
+			text-align: left;
+		}
+
+		p {
+			text-align: left;
+		}
+	}
+
+}
+
+/*===========Text============*/
+
+.about-text {
+	background-color: #fff;
+	padding: 5% 0% 5%;
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+  .body {
+  }
+
+	.padding-top {
+		padding-top: .5%;
+	}
+
+  .quote {
+    font-size: 1.3rem;
+		font-style: italic;
+		color:$primary--color;
+  }
+}
+
+
+/*==========Team Section==========*/
+
+.about-team {
+
+	background-color: $primary--color;
+	padding: 2%;
+	color: #fff;
+
+	h2 {
+		color: #fff;
+		font-weight: bolder;
+	}
+
+	p {
+		padding-bottom: 2%;
+	}
+
+	.team-member {
+
+		padding-bottom:10%;
+
+		&__name {
+			padding-top:2%;
+		}
+
+		&__title {
+			font-weight:bold;
+			font-size:1.1rem;
+		}
+
+		&__avatar {
+			img {
+				border: 6px solid $color--accent;
+			}
+		}
+
+	}
+}
+
+
+/*==========Advisors==============*/
+
+
+.about-advisors {
+
+	background-color: #fff;
+	padding: 2%;
+	color: $color--primarytext;
+
+	h2 {
+		color: $color--headlines;
+		font-weight: bolder;
+	}
+
+	p {
+		padding-bottom: 2%;
+	}
+
+	.advisor {
+
+		padding-bottom:10%;
+
+		&__name {
+			padding-top:2%;
+		}
+
+		&__title {
+			font-weight:bold;
+			font-size:1.1rem;
+		}
+
+		&__avatar {
+
+			img {
+				border: 6px solid $primary--color;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,91 @@
+/*====Testimonials=======*/
+
+/*=========Testimonials==========*/
+
+.product-testimonials {
+
+	text-align: center;
+	background-color: $color--accent;
+	padding:5% 0 2% 0;
+
+	h2 {
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+	}
+
+	&_icon {
+		margin-top: 2%;
+	}
+
+	@include breakpoint (medium) {
+		padding:5% 0 5% 0;
+	}
+
+  .testimonial-slider-container {
+  	margin:2rem 0;
+    padding: 1rem 0;
+
+    .orbit-previous,
+    .orbit-next {
+      color: $primary--color;
+      font-size:2rem;
+
+      &:hover, &:active, &:focus {
+        background-color: transparent;
+      }
+    }
+
+    .testimonial-slide {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .testimonial-slide-content {
+      padding: 1rem 1.5rem;
+
+      @media screen and (min-width: 40em) {
+        padding: 1rem 4rem;
+      }
+    }
+
+    .testimonial-slide-quotation {
+      font-size: 0.8rem;
+      position: relative;
+      background: $primary--color;
+      color:white;
+      padding: 5% 3%;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      position: relative;
+
+      @include breakpoint (medium) {
+        font-size: 1.2rem;
+        padding: 5% 5%;
+      }
+    }
+
+    .testimonial-slide-quotation:after{
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left:48%;
+        border-top: 15px solid $primary--color;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+
+    .testimonial-slide-author-container {
+      text-align: center;
+
+      .testimonial-slide-author-info {
+        display: inline-block;
+        font-size: 1.5rem;
+        color:$primary--color;
+        text-transform: capitalize;
+        font-weight: bold;
+        text-align: center;
+        }
+    }
+  }
+}

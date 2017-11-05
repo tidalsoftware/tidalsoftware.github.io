@@ -1,1 +1,32 @@
-theme: jekyll-theme-minimal
+# General Configuration
+title: Tidal Software
+email: info@tidalmigrations.com
+description: Software that moves the world
+baseurl: ""
+url: "http://tidalsw.com"
+keywords: "tidal,software,tidal software,cloud migration"
+site-author: "Tidal Software"
+copyright: "2017 Tidal Software"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+#Excluded Files
+exclude: ["vendor",
+          "_assets",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json",
+          "js",
+          "css",
+          ]
+
+# Social links
+twitter: "https://twitter.com/tidalmigrations"
+facebook: "https://www.facebook.com/tidalmigrations"
+linkedin: "https://www.linkedin.com/company/tidal-migrations"

@@ -1,0 +1,135 @@
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+	clear: both;
+	margin-top: -30px;
+}
+
+@charset "UTF-8";
+
+.row {
+  max-width: 1200px; }
+
+.footer {
+  background-color: $color--background-light;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem;
+
+	p {
+		font-size: 1rem;
+		padding-top: 2%;
+	}
+}
+
+ .footer p .copyright {
+	font-size: 1.0rem;
+}
+
+.footer-menu {
+
+	h2 {
+		font-size:1.3rem;
+		color: $primary--color;
+	}
+
+	a {
+		font-size: 1rem;
+		color: $color--primarytext;
+		transition: all 0.3s ease 0s;
+
+
+		&:hover {
+			color: scale-color($color--primarytext, $lightness: +15%);
+		}
+	}
+
+	ul, li {
+		list-style: none;
+		margin-left: 0;
+	}
+}
+
+.footer-logo {
+		margin-top:-2%;
+}
+
+.footer .copyright p {
+	font-size: 0.25rem;
+	margin: 0 0 1rem 0; }
+
+	.typer {
+	    display: inline;
+	  }
+  .typed-cursor{
+      opacity: 1;
+      animation: blink 0.7s infinite;
+  }
+  @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+
+  .social-icons {
+    font-weight: 300;
+    font-size: 0.80em;
+    color: $color--accent;
+  }
+
+  .social-icons h1 {
+    margin: 40px 0;
+  }
+
+  .social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-icons ul li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+  }
+
+  .social-icons ul li a {
+    display: block;
+    font-size: 1.3em;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  .social-icons ul li a i {
+    color: $color--primarytext;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .social-icons ul li a:hover i {
+    color:  scale-color($color--accent, $lightness: +15%);
+  }
+
+.footer-mobile-menu {
+	margin: 0 0 5% 0;
+	text-align: center;
+
+	ul {
+    overflow: hidden;
+	}
+
+	li {
+		display:inline;
+	}
+
+	li a {
+	    display: inline;
+	    text-align: center;
+			padding: 0 1% 1% 1%;
+			color:$primary--color;
+	}
+
+}

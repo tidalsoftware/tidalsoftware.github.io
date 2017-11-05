@@ -1,0 +1,130 @@
+/*=========Integration=======*/
+
+.integration {
+	background-color: $color--accent;
+	padding: 8% 0;
+	text-align: center;
+
+  &.tower {
+	  background-color: white;
+		padding-top: 15%;
+
+		h2 {
+			margin-top: 5%;
+		}
+		img {
+			margin-top:10%;
+		}
+
+		@include breakpoint (medium) {
+			padding-top: 5%;
+
+			img {
+				width: 70%;
+			}
+		}
+
+		@include breakpoint (large) {
+			padding-top: 5%;
+
+			h2 {
+				margin-top: 15%;
+			}
+			img {
+				width: 100%;
+			}
+		}
+  }
+
+  &.dns {
+	  background-color: black;
+
+    p, h2, ul li {
+      color: white;
+			text-align: center;
+    }
+
+		ul {
+			list-style-position: inside;
+			margin: 0 auto;
+			display: table;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		@include breakpoint (medium) {
+			img {
+				width: 40%;
+			}
+		}
+
+		@include breakpoint (large) {
+			img {
+				width: 100%;
+			}
+
+			p, h2, ul li {
+				text-align: left;
+	    }
+	}
+}
+
+  &.tidal {
+	  background-color: $primary--color;
+    img {
+      width: 300px;
+    }
+    p {
+      color: white;
+    }
+		a {
+			color: white;
+			transition: color .3s ease;
+
+			&:hover {
+				color: $color--accent;
+			}
+		}
+  }
+  &.slack {
+	  background-color: $color--accent;
+  }
+  &.api {
+	  background-color: white;
+
+		img {
+			margin-top:0;
+			margin-bottom: 5%;
+		}
+
+		@include breakpoint (large) {
+			img {
+				margin-top:-5%;
+				margin-bottom: 0;
+			}
+		}
+  }
+
+  h2 {
+		text-transform: uppercase;
+	}
+
+	&_txt {
+		padding-top:2%;
+	}
+
+	@include breakpoint (medium) {
+		padding: 8% 0;
+	}
+
+	@include breakpoint (large) {
+		padding: 5% 0;
+		text-align: left;
+
+		&_txt {
+			padding-top:10%;
+		}
+	}
+}

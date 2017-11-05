@@ -1,0 +1,316 @@
+/*=====PRODUCT PAGE================================*/
+
+/*=========HERO IMAGE=============*/
+
+.product-hero {
+	background-color: $primary--color;
+	margin-top: rem-calc(67);
+	padding: 4rem 0 1.6rem 0;
+
+	h1 {
+		font-size: 2rem;
+		font-weight: bolder;
+		padding: 1% 0 0 0;
+		color: white;
+
+		@include breakpoint(medium) {
+			font-size: 3rem;
+		}
+	}
+
+	p.typer-wrapper {
+		font-size: 1.2rem;
+		margin: -1rem auto 5% auto;
+		font-weight: 100;
+		color: white;
+		display: inline;
+		width:auto;
+		height:auto;
+
+		@include breakpoint(medium) {
+			font-size: 1.5rem;
+			margin: -1rem auto 5% auto;
+			height:auto;
+			max-width: 45%;
+		}
+	}
+
+	&__image {
+		margin:8% 0 -5% 0;
+		opacity: 0;
+		animation: slide 1s .5s ease;
+		animation-fill-mode: forwards;
+		transition: all 1s;
+
+		@include breakpoint(medium) {
+			margin:3% 0 -5% 0;
+		}
+	}
+}
+
+
+/*=========Features==========*/
+
+.product-features {
+	padding:5% 0 1% 0;
+	text-align: center;
+
+	&_item {
+		margin-bottom:10%;
+	}
+
+	@include breakpoint (medium) {
+
+		h3 {
+			text-align: center;
+			font-size: 25px;
+		}
+		p {
+			text-align: center;
+			font-size: 16px;
+		}
+
+		&_item {
+			margin-bottom:3%;
+		}
+
+
+	}
+
+
+	p {
+		font-size:1.2rem;
+	}
+
+	&__img {
+		position:relative;
+		margin: 0 auto 0.8rem auto;
+		display: inline-block;
+
+			.hoverlay {
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				transition: all $transition-speed ease;
+			}
+
+			&:hover .hoverlay {
+				opacity: 1;
+				box-shadow: 0 0 0.3rem rgba(0,0,0,0.3);
+			}
+		}
+}
+
+/*=========Case Study==========*/
+
+.product-casestudy {
+
+	background-color: $color--accent;
+	padding: 4% 0;
+	position: relative;
+
+	&__img {
+		margin-bottom: 10%;
+
+		@include breakpoint(small) {
+			margin-bottom: 14%;
+		}
+
+		@include breakpoint(medium) {
+			margin-bottom: 7%;
+		}
+
+		@include breakpoint(large) {
+			margin-bottom: 5%;
+		}
+	}
+
+
+	&__text-container {
+
+		background-color: #fff;
+		padding: 5%;
+		position: relative;
+
+		h2, .blue-text {
+			color: $color--blue-font;
+		}
+
+		h2 {
+			text-transform: uppercase;
+		}
+
+		&:after {
+			content:'';
+	    position: absolute;
+	    bottom: 100%;
+	    left: 50%;
+	    margin-left: -50px;
+	    width: 0;
+	    height: 0;
+	    border-bottom: solid 30px #fff;
+	    border-left: solid 50px transparent;
+	    border-right: solid 50px transparent;
+		}
+	}
+
+}
+
+
+/*=========Steps=================*/
+
+.product-steps {
+
+	&_icons {
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	h3, h4, p {
+		color: $color--blue-font;
+		text-align: center;
+	}
+
+	h4 {
+		margin-top: 3rem;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+	h3 {
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		text-align: center;
+
+		@include breakpoint(medium only) {
+			font-size: 1.2rem;
+		}
+	}
+
+	@include breakpoint (medium) {
+		h4, p {
+			text-align: left;
+		}
+	}
+
+	.step-container {
+		margin:4rem 0;
+	}
+	.screens-container {
+		margin-top: 4rem;
+
+		@include breakpoint(large) {
+			margin-top: 10%;
+		}
+	}
+
+	&_screen-l,
+	&_screen-r {
+    	height: 250px;
+		margin-bottom: 2rem;
+
+		@include breakpoint(large) {
+			margin-bottom:-50px;
+		}
+	}
+
+	&_screen-l { float: left }
+
+	&_screen-r { float: right }
+}
+
+
+
+/*==========White Label ==========*/
+
+.product-whitelabel {
+	background-color: $secondary--color;
+	padding:5% 0 10% 0;
+
+	h2, p {
+		color: #fff;
+	}
+
+	h2 {
+		text-transform: uppercase;
+	}
+
+	img {
+		margin-bottom: -10%;
+	}
+}
+
+/*=========Collaboration=======*/
+
+.product-collaboration {
+
+	background-color: $color--accent;
+	padding: 15% 0 5% 0;
+	text-align: center;
+
+
+	h2 {
+		text-transform: uppercase;
+	}
+
+	&_txt {
+		padding-top:2%;
+	}
+
+	@include breakpoint(large) {
+		padding: 11% 0 5% 0;
+		text-align: left;
+
+		&_txt {
+			padding-top:10%;
+		}
+
+
+
+	}
+
+}
+
+/*===========Table===========*/
+
+.product-table {
+	padding:5%;
+
+	h2 {
+		padding: 2%;
+		font-weight: bolder;
+		color: $primary--color;
+		text-transform: uppercase;
+		font-size: 2rem;
+	}
+
+	table, th, td {
+   border: 3px solid $primary--color;
+	 padding: 15px;
+	 text-align: center;
+	}
+
+	&__icon {
+		width: 30px;
+	}
+
+	&__title-table {
+		text-align:left !important;
+		font-weight: bold;
+	}
+
+/*Dropdown Style*/
+
+	.button {
+		width:100%;
+		margin: 0 auto;
+	}
+
+	.dropdown-pane {
+		width:62%;
+	}
+
+}

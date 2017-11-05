@@ -1,0 +1,31 @@
+/*********************
+COLORS
+*********************/
+
+/* Tidal Blue */
+$primary--color: #4ABFD3;
+/* Tidal Grey */
+$secondary--color: #58585B;
+/* Tidal Yellow */
+$color--accent: #ffD04E;
+
+/*Text Colors*/
+$color--headlines: #31313f;
+$color--primarytext: #737373;
+$color--overdarktext: #f8f8f8;
+$color--blue-font: #58585B;
+$color--darkgray: #737373;
+
+/*Background Colors*/
+$color--background-light: #fff;
+$color--background-dark: black;
+$color--background-alt: #cacad9;
+
+/*Button Colors*/
+$color--button: $color--accent;
+
+/*********************
+METRICS
+*********************/
+
+$transition-speed: 400ms;

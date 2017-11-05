@@ -1,0 +1,49 @@
+/*=====SINGLE PAGE================================*/
+
+/*=========HEADER=============*/
+
+
+.page-header {
+  background-color: $primary--color;
+  padding: 30% 0 10% 0;
+  text-align: center;
+
+  @include breakpoint(medium){
+  padding: 20% 0 10% 0;
+  }
+
+  @include breakpoint(large){
+  padding: 10% 0 5% 0;
+  }
+
+  h1 {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.page-content {
+  padding: 5% 1%;
+
+  h2 {
+    padding: 2% 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  h3 {
+    padding:0 0 1% 0;
+    font-size:20px;
+  }
+
+  p {
+    padding-bottom: 3%;
+  }
+
+
+    @include breakpoint (medium) {
+      .page-content {
+        padding: 5% 60%;
+    }
+  }
+}

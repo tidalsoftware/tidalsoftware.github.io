@@ -1,0 +1,84 @@
+/*=====CONTACT PAGE================================*/
+
+/*=========HERO IMAGE=============*/
+
+.contact-hero {
+
+	background: $color--accent;
+	padding: 10% 0 5% 0;
+
+	.text-wrap {
+	padding:10% 0 ;
+	}
+
+	h1 {
+		font-size: 50px;
+		font-weight: bolder;
+		padding: 1% 0 0 0;
+		color: $color--headlines;
+		text-align: center;
+	}
+
+	p {
+		font-size: 22px;
+		color: $color--primarytext;
+		font-weight: 100;
+		padding:0 0 3% 0;
+		text-align: center;
+	}
+
+	@include breakpoint(medium) {
+		h1, p {
+			text-align: left;
+		}
+	}
+
+}
+
+
+/*===========Contact Info============*/
+
+.contact-info {
+
+	text-align:center;
+	padding:5%;
+
+	&__item {
+		margin: 3% 0 0 0;
+	}
+
+	h2 {
+		font-size: 3.3rem;
+		font-weight: bold;
+		margin-bottom:3%;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	@include breakpoint (medium) {
+
+		text-align:left;
+
+		h2 {
+			text-align: left;
+		}
+
+		p {
+			margin-left:-20px;
+			padding-top: 1.5%;
+			text-align: left;
+		}
+	}
+
+	@include breakpoint (large) {
+
+		p {
+			margin-left:-30px;
+			padding-top: 1.5%;
+		}
+	}
+
+
+}
