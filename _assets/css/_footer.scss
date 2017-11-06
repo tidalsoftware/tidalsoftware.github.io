@@ -9,39 +9,39 @@ FOOTER STYLES
 @charset "UTF-8";
 
 .row {
-  max-width: 1200px; }
+  max-width: 700px; }
 
 .footer {
   background-color: $color--background-light;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 4rem;
 
 	p {
-		font-size: 1rem;
+		font-size: 0.8rem;
 		padding-top: 2%;
 	}
 }
 
  .footer p .copyright {
-	font-size: 1.0rem;
+	font-size: 0.7rem;
 }
 
 .footer-menu {
 
 	h2 {
-		font-size:1.3rem;
+		font-size:1.0rem;
 		color: $primary--color;
 	}
 
 	a {
-		font-size: 1rem;
+		font-size: 0.8rem;
 		color: $color--primarytext;
 		transition: all 0.3s ease 0s;
 
 
 		&:hover {
-			color: scale-color($color--primarytext, $lightness: +15%);
+			color: $color--accent;
 		}
 	}
 
