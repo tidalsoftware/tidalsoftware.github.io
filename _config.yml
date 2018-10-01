@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://tidalsw.com"
 keywords: "tidal,software,tidal software,cloud migration"
 site-author: "Tidal Software"
-copyright: "2017 Tidal Software"
+copyright: "2018 Tidal Software"
 
 # Build settings
 markdown: kramdown
