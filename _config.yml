@@ -1,12 +1,12 @@
 # General Configuration
 title: Tidal Software
-email: info@tidalmigrations.com
+email: info@tidalcloud.com
 description: Software that moves the world
 baseurl: ""
 url: "http://tidalsw.com"
 keywords: "tidal,software,tidal software,cloud migration"
 site-author: "Tidal Software"
-copyright: "2018 Tidal Software"
+copyright: "2018 Tidal SW Inc."
 
 # Build settings
 markdown: kramdown
@@ -29,4 +29,4 @@ exclude: ["vendor",
 # Social links
 twitter: "https://twitter.com/tidalmigrations"
 facebook: "https://www.facebook.com/tidalmigrations"
-linkedin: "https://www.linkedin.com/company/tidal-migrations"
+linkedin: "https://www.linkedin.com/company/tidal-cloud"
